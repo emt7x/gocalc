@@ -33,6 +33,11 @@ func (e *Evaulater) Evaluate() (*Number, error) {
 
 // Evaluate an expression into a final number node.
 func (e *Evaulater) evalExpression(expr Node) (*Number, error) {
+	// Check if the provided expression is nil.
+	if expr == nil {
+		return nil, fmt.Errorf("no expression node provided to the evaluator")
+	}
+	
 	switch expr.Type() {
 	case "binaryExpression":
 		left, err := e.evalExpression(expr.(*BinaryEpxression).Left)
