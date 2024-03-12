@@ -1,4 +1,4 @@
-# GoCalc
+# GoCalc
 
 GoCalc is a terminal based calculator that is formed from the use of an AST (Abstract Syntax Tree). It uses a `lexer` -> `parser` -> `ast` -> `evaluation` process, and follows the rules of BODMAS which can be seen when a calculation is processed.
 
@@ -6,7 +6,7 @@ GoCalc is a terminal based calculator that is formed from the use of an AST (Abs
 
 BODMAS is a mathematical acronym for Brackets, Division, Multiplication, Addition then Subtraction. It is a logical mathematical guideline followed by all calculators, and I have emulated this process inside of GoCalc, allowing for you to use the rules of BODMAS inside to get a true result.
 
-# Syntax
+# Syntax
 
 For an addition expression, you would just input: `1 + 1` to return the value of `2`. You can also have a more advanced expression such as `(4 + 2) / 2` to return the value of `3`.
 
