@@ -69,7 +69,7 @@ func (e *Evaulater) evalExpression(expr Node) (*Number, error) {
 				return nil, fmt.Errorf("integer cannot divide by zero")
 			}
 
-			return &Number{Value: left.Value / right.Value}, nil
+			return &Number{Value: float64(int(left.Value) % int(right.Value))}, nil
 		default:
 			println(expr.(*BinaryEpxression).Operator.Value)
 			return nil, fmt.Errorf("invalid operator token")
