@@ -23,7 +23,7 @@ type Number struct {
 	Value float64
 }
 
-func (n *Number) Type()   string   { return "number" }
+func (n *Number) Type() string   { return "number" }
 func (n *Number) String() string { return fmt.Sprintf("%v", n.Value) }
 
 // Evaulate the specific node.
@@ -37,7 +37,7 @@ func (e *Evaulater) evalExpression(expr Node) (*Number, error) {
 	if expr == nil {
 		return nil, fmt.Errorf("no expression node provided to the evaluator")
 	}
-	
+
 	switch expr.Type() {
 	case "binaryExpression":
 		left, err := e.evalExpression(expr.(*BinaryEpxression).Left)
@@ -71,7 +71,6 @@ func (e *Evaulater) evalExpression(expr Node) (*Number, error) {
 
 			return &Number{Value: float64(int(left.Value) % int(right.Value))}, nil
 		default:
-			println(expr.(*BinaryEpxression).Operator.Value)
 			return nil, fmt.Errorf("invalid operator token")
 		}
 	case "unaryOperator":
