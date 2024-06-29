@@ -23,7 +23,7 @@ type Number struct {
 	Value float64
 }
 
-func (n *Number) Type() string   { return "number" }
+func (n *Number) Type()   string   { return "number" }
 func (n *Number) String() string { return fmt.Sprintf("%v", n.Value) }
 
 // Evaulate the specific node.
