@@ -1,4 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/emt7x/gocalc)](https://goreportcard.com/badge/github.com/emt7x/gocalc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/emi7x/gocalc)](https://goreportcard.com/badge/github.com/emi7x/gocalc)
 
 # GoCalc
 
