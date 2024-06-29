@@ -1,5 +1,3 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/emi7x/gocalc)](https://goreportcard.com/badge/github.com/emi7x/gocalc)
-
 # GoCalc
 
 GoCalc is a terminal based calculator that is formed from the use of an AST (Abstract Syntax Tree). It uses a `lexer` -> `parser` -> `ast` -> `evaluation` process, and follows the rules of BODMAS which can be seen when a calculation is processed.
